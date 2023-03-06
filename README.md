@@ -14,6 +14,10 @@ Search: Elasticsearch
 
 Integration Test: Testcontainers
 
+**Why This Architecture**
+
+I chose Java17 and Spring Boot to develop rest service. I preferred MongoDB to store json as is for performance reasons. Elasticsearch was chosen because requirements contain some complex searching operations. I need to sync MongoDB and Elasticsearch. I chose Kafka queue to make this integration async. I used Testcontainers to test integrations to see actual behaviours.
+
 ![architecture.png](src%2Fmain%2Fresources%2Farchitecture.png)
 
 **HOW TO RUN**
