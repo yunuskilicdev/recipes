@@ -1,0 +1,37 @@
+spring:
+  config:
+    activate:
+      on-profile: docker
+  data:
+    mongodb:
+      host: recipe_db
+      port: 27017
+      database: recipe_db
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      auto-offset-reset: earliest
+  elasticsearch:
+    host: elasticsearch:9200
+recipe:
+  json: recipes.json
+
+---
+spring:
+  config:
+    activate:
+      on-profile: default
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: recipe_db
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      auto-offset-reset: earliest
+  elasticsearch:
+    host: localhost:9200
+recipe:
+  json: classpath:recipes.json
+
