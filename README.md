@@ -14,7 +14,7 @@ Search: Elasticsearch
 
 Integration Test: Testcontainers
 
-![architecture.png](..%2F..%2F..%2FDownloads%2Farchitecture.png)
+![architecture.png](src%2Fmain%2Fresources%2Farchitecture.png)
 
 **HOW TO RUN**
 
